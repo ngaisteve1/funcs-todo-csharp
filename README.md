@@ -35,3 +35,7 @@ To test the EF backing store, create a new `Todos` database and then run the `To
 
 You can run the `Test.ps1` PowerShell script to run a simple set of tests against the binding type of your choice, to create, read, update and delete todo items.
 
+### Troubleshoot
+
+1. Need to Clean and Rebuild when connectionstring changed.
+
