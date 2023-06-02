@@ -13,6 +13,7 @@ class Startup : FunctionsStartup
     public override void Configure(IFunctionsHostBuilder builder)
     {
         string connectionString = Environment.GetEnvironmentVariable("SqlConnectionString");
+        //string connectionString = "Server=.;Database=Todo;Trusted_Connection=True;TrustServerCertificate=true;MultipleActiveResultSets=True";
         builder.Services.AddDbContext<TodoContext>(
             options => SqlServerDbContextOptionsExtensions.UseSqlServer(options, connectionString));
     }
